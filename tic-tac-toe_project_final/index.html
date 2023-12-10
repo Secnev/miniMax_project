@@ -1,0 +1,130 @@
+<!-- 
+
+Name: David Vences
+Student ID: 801045180
+Course: ITCS-6150
+Project: 3D Tic-Tac-Toe
+
+--> 
+
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Tic-Tac-Toe</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <div class = "title"> Tic Tac Toe</div>
+        <div class="game-screen">
+      <div class="side-bar">
+        <div class="subtitle-group">
+          <div class = "sub-title"> ITCS-6150 Project</div>
+        <div class = "sub-title"> David Vences (801045180)</div>
+        </div>
+        
+        <div class = "game-description">
+          Rules: Place four of your symbols in a horizontal, vertical, or diagonal row to win the game. 
+        </div>
+        <button id="restartButton" onclick='showStartScreen()'>Reset</button>
+      </div>
+      
+
+      <div class = "board-container">
+          <div class ="board X" id="board 0">
+              <div class="cell" data-cell='000' id='cell 000'></div>
+              <div class="cell" data-cell='001' id='cell 001'></div>
+              <div class="cell" data-cell='002' id='cell 002'></div>
+              <div class="cell" data-cell='003' id='cell 003'></div>
+              <div class="cell" data-cell='010' id='cell 010'></div>
+              <div class="cell" data-cell='011' id='cell 011'></div>
+              <div class="cell" data-cell='012' id='cell 012'></div>
+              <div class="cell" data-cell='013' id='cell 013'></div>
+              <div class="cell" data-cell='020' id='cell 020'></div>
+              <div class="cell" data-cell='021' id='cell 021'></div>
+              <div class="cell" data-cell='022' id='cell 022'></div>
+              <div class="cell" data-cell='023' id='cell 023'></div>
+              <div class="cell" data-cell='030' id='cell 030'></div>
+              <div class="cell" data-cell='031' id='cell 031'></div>
+              <div class="cell" data-cell='032' id='cell 032'></div>
+              <div class="cell" data-cell='033' id='cell 033'></div>
+          </div>
+          <div class ="board X" id="board 1">
+              <div class="cell" data-cell='100' id='cell 100'></div>
+              <div class="cell" data-cell='101' id='cell 101'></div>
+              <div class="cell" data-cell='102' id='cell 102'></div>
+              <div class="cell" data-cell='103' id='cell 103'></div>
+              <div class="cell" data-cell='110' id='cell 110'></div>
+              <div class="cell" data-cell='111' id='cell 111'></div>
+              <div class="cell" data-cell='112' id='cell 112'></div>
+              <div class="cell" data-cell='113' id='cell 113'></div>
+              <div class="cell" data-cell='120' id='cell 120'></div>
+              <div class="cell" data-cell='121' id='cell 121'></div>
+              <div class="cell" data-cell='122' id='cell 122'></div>
+              <div class="cell" data-cell='123' id='cell 123'></div>
+              <div class="cell" data-cell='130' id='cell 130'></div>
+              <div class="cell" data-cell='131' id='cell 131'></div>
+              <div class="cell" data-cell='132' id='cell 132'></div>
+              <div class="cell" data-cell='133' id='cell 133'></div>
+          </div>
+          <div class ="board X" id="board 2">
+              <div class="cell" data-cell='200' id='cell 200'></div>
+              <div class="cell" data-cell='201' id='cell 201'></div>
+              <div class="cell" data-cell='202' id='cell 202'></div>
+              <div class="cell" data-cell='203' id='cell 203'></div>
+              <div class="cell" data-cell='210' id='cell 210'></div>
+              <div class="cell" data-cell='211' id='cell 211'></div>
+              <div class="cell" data-cell='212' id='cell 212'></div>
+              <div class="cell" data-cell='213' id='cell 213'></div>
+              <div class="cell" data-cell='220' id='cell 220'></div>
+              <div class="cell" data-cell='221' id='cell 221'></div>
+              <div class="cell" data-cell='222' id='cell 222'></div>
+              <div class="cell" data-cell='223' id='cell 223'></div>
+              <div class="cell" data-cell='230' id='cell 230'></div>
+              <div class="cell" data-cell='231' id='cell 231'></div>
+              <div class="cell" data-cell='232' id='cell 232'></div>
+              <div class="cell" data-cell='233' id='cell 233'></div>
+          </div>
+          <div class ="board X" id="board 3">
+                <div class="cell" data-cell='300' id='cell 300'></div>
+                <div class="cell" data-cell='301' id='cell 301'></div>
+                <div class="cell" data-cell='302' id='cell 302'></div>
+                <div class="cell" data-cell='303' id='cell 303'></div>
+                <div class="cell" data-cell='310' id='cell 310'></div>
+                <div class="cell" data-cell='311' id='cell 311'></div>
+                <div class="cell" data-cell='312' id='cell 312'></div>
+                <div class="cell" data-cell='313' id='cell 313'></div>
+                <div class="cell" data-cell='320' id='cell 320'></div>
+                <div class="cell" data-cell='321' id='cell 321'></div>
+                <div class="cell" data-cell='322' id='cell 322'></div>
+                <div class="cell" data-cell='323' id='cell 323'></div>
+                <div class="cell" data-cell='330' id='cell 330'></div>
+                <div class="cell" data-cell='331' id='cell 331'></div>
+                <div class="cell" data-cell='332' id='cell 332'></div>
+                <div class="cell" data-cell='333' id='cell 333'></div>
+            </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="loading-page" id="loading-page">Loading Game...</div>
+    <div class="winning-message" id="winningMessage">
+        <div data-winning-message-text id= "data-winning-message-text"> </div>
+        <div data-winning-message-text id= "data-winning-message-text"> Choose Difficulty</div>
+        <div class="button-container">
+          <button id="restartButton" onclick='easyLevel()'>Easy</button>
+          <button id="restartButton" onclick='mediumLevel()'>Medium</button>
+          <button id="restartButton" onclick='insaneLevel()'>Insane</button>
+      </div>
+      
+    </div>
+
+    
+	
+  </body>
+</html>
+</html>
